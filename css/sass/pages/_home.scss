@@ -1,5 +1,7 @@
 @media screen and (max-width:900px) {
-    
+    .desktop-message{
+        display: none;
+    }
     .home-page-container {
         width: 93%;
         height: auto;
@@ -14,6 +16,8 @@
             font-size: 18px;
             margin-bottom: 10px;
             font-weight: 500;
+            
+        
 
 
         }
@@ -23,6 +27,7 @@
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 25px;
+            
 
         }
 
