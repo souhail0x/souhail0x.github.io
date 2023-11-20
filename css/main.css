@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&family=Kanit&family=Playfair+Display:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@media screen and (max-width: 900px) {
+  .home-page-container {
+    width: 93%;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    font-family: poppins;
+    overflow: hidden;
+  }
+  .home-page-container .hi-user {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .home-page-container .first-title {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  .home-page-container .header {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .home-page-container .header .logo {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .home-page-container .header .profile-image {
+    height: 40px;
+    width: 40px;
+    border: black solid 1px;
+    border-radius: 50%;
+    padding: 2px;
+  }
+  .home-page-container .header .profile-image img {
+    height: 100%;
+    width: 100%;
+    transform: scale(1.1);
+  }
+  .home-page-container .search-container {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    height: 40px;
+  }
+  .home-page-container .search-container input {
+    width: 84%;
+    height: 100%;
+    border-radius: 5px;
+    padding-left: 20px;
+    outline: none;
+    border: #EF9C14 solid 1px;
+    background-color: #FDFAF5;
+  }
+  .home-page-container .search-container button {
+    width: 45px;
+    height: 100%;
+    background-color: #EF9C14;
+    outline: none;
+    border: #EF9C14 solid 1px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-page-container .hook {
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  .home-page-container .school-cards-slider {
+    height: 25vh;
+    width: 100vw;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  .home-page-container .school-cards-slider .swiper-wrapper {
+    width: auto;
+  }
+  .home-page-container .school-cards-slider .school-sugg .rating, .home-page-container .school-cards-slider .school-sugg h1 {
+    left: 3%;
+  }
+  .home-page-container .school-cards-slider .school-sugg {
+    height: 100%;
+    width: 230px;
+    margin-right: 20px;
+    background-color: red;
+    border-radius: 10px;
+    position: relative;
+  }
+  .home-page-container .school-cards-slider .school-sugg .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.82) 2.06%, rgba(0, 0, 0, 0.82) 30.64%, rgba(217, 217, 217, 0) 98.3%);
+  }
+  .home-page-container .school-cards-slider .school-sugg .school-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    border: none;
+  }
+  .home-page-container .school-cards-slider .school-sugg h1 {
+    position: absolute;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #FDFAF5;
+    top: 50%;
+  }
+  .home-page-container .school-cards-slider .school-sugg .favourite {
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #FDFAF5;
+    border-radius: 50%;
+    border: 0.5px solid #EF9C14;
+    left: 85%;
+  }
+  .home-page-container .school-cards-slider .school-sugg .favourite svg {
+    justify-self: center;
+    stroke-width: 1px;
+    stroke: #EF9C14;
+    fill: #EF9C14;
+  }
+  .home-page-container .school-cards-slider .school-sugg .rating {
+    position: absolute;
+    height: 17px;
+    width: 35px;
+    top: 8%;
+    border-radius: 10px;
+    border: #EF9C14 0.5px solid;
+    background-color: #FDFAF5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 2px;
+    padding-left: 2px;
+  }
+  .home-page-container .school-cards-slider .school-sugg .rating svg {
+    fill: #EF9C14;
+    height: 11px;
+    width: 11px;
+  }
+  .home-page-container .school-cards-slider .school-sugg .rating span {
+    font-weight: 500;
+    font-size: 10px;
+  }
+  .home-page-container .school-cards-slider .school-sugg .location, .home-page-container .school-cards-slider .school-sugg .seen-by {
+    left: 5.5%;
+    display: flex;
+    position: absolute;
+    top: 70%;
+    gap: 5px;
+  }
+  .home-page-container .school-cards-slider .school-sugg .location svg, .home-page-container .school-cards-slider .school-sugg .seen-by svg {
+    fill: #EF9C14;
+  }
+  .home-page-container .school-cards-slider .school-sugg .location span, .home-page-container .school-cards-slider .school-sugg .seen-by span {
+    font-size: 12px;
+    padding-left: 3px;
+    color: #FDFAF5;
+    font-weight: 300;
+  }
+  .home-page-container .school-cards-slider .school-sugg .seen-by {
+    top: 82%;
+    left: 5%;
+  }
+  .home-page-container .school-cards-slider .school-sugg .seen-by span {
+    padding-left: 0px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.swiper {
+  width: 100vw;
+  overflow: visible;
+  height: 100%;
+}/*# sourceMappingURL=main.css.map */

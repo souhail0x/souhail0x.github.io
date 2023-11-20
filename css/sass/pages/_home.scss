@@ -1,0 +1,251 @@
+@media screen and (max-width:900px) {
+    
+    .home-page-container {
+        width: 93%;
+        height: auto;
+        margin: auto;
+        padding-top: 10px;
+        font-family: poppins;
+        overflow: hidden;
+        
+
+
+        .hi-user {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 500;
+
+
+        }
+
+        .first-title {
+            margin-top: 5px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 25px;
+
+        }
+
+        .header {
+
+            width: 100%;
+
+            padding: {
+                top: 10px;
+                bottom: 10px;
+            }
+
+            ;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            .logo {
+                font-size: 30px;
+                font-weight: 600;
+
+
+            }
+
+            .profile-image {
+                height: 40px;
+                width: 40px;
+                border: black solid 1px;
+                border-radius: 50%;
+                padding: 2px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .search-container {
+            width: 100%;
+            display: flex;
+            gap: 5px;
+
+            height: 40px;
+
+            input {
+                width: 84%;
+                height: 100%;
+                border-radius: 5px;
+                padding-left: 20px;
+                outline: none;
+                border: #EF9C14 solid 1px;
+                background-color: #FDFAF5;
+            }
+
+            button {
+                width: 45px;
+                height: 100%;
+                background-color: #EF9C14;
+                outline: none;
+                border: #EF9C14 solid 1px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        }
+        .hook{
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        .school-cards-slider {
+            height: 25vh;
+            width: 100vw;
+            display: flex;
+            gap: 20px;
+            overflow: hidden;
+            margin-top: 10px;
+
+            .swiper-wrapper {
+                width: auto;
+                
+
+            }
+
+            %card-objects {
+
+                left: 3%;
+            }
+
+            .school-sugg {
+                height: 100%;
+                width: 230px;
+                margin-right: 20px;
+                background-color: red;
+                border-radius: 10px;
+                position: relative;
+
+                .overlay {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: inherit;
+                    top: 0;
+                    left: 0;
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.82) 2.06%, rgba(0, 0, 0, 0.82) 30.64%, rgba(217, 217, 217, 0.00) 98.3%);
+                }
+
+                .school-img {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: inherit;
+                    border: none
+                }
+
+                h1 {
+                    @extend %card-objects;
+                    position: absolute;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    color: #FDFAF5;
+                    top: 50%;
+
+                }
+
+                .favourite{
+                    position: absolute;
+                    height: 26px;
+                    width: 26px;
+                    
+                    top: 5%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding:5px;
+                    background-color: #FDFAF5;
+                    border-radius: 50%;
+                    border: 0.5px solid #EF9C14;
+
+                    left: 85%;
+                    svg{
+                        justify-self: center;
+                        stroke-width: 1px;
+                        stroke: #EF9C14;
+                        
+                        fill: #EF9C14;
+
+                    }
+                   
+                }
+                .rating{
+                    @extend %card-objects;
+                    position: absolute;
+                    height: 17px;
+                    width: 35px;
+                    top: 8%;
+                    border-radius: 10px;
+                    border: #EF9C14 0.5px solid;
+                    background-color: #FDFAF5;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: {
+                        right: 2px;
+                        left: 2px;
+                    };
+                    svg{
+                        fill: #EF9C14;
+                        height: 11px;
+                        width: 11px;
+                    }
+                    span{
+                        font-weight: 500;
+                        font-size: 10px;
+                    }
+
+                }
+                .location{
+                    left: 5.5%;
+                    display: flex;
+                    position: absolute;
+                    top: 70%;
+                    gap: 5px;
+                    
+                    svg{
+                        fill: #EF9C14;
+                        
+                        
+                    }
+
+                    span{
+                        font-size: 12px;
+                        padding-left: 3px;
+                        color: #FDFAF5;
+                        font-weight: 300;
+                    }
+                    
+                }
+                .seen-by{
+                    @extend .location;
+                    top: 82%;
+                    span{
+                        padding-left: 0px;
+                    }
+                    left: 5%;
+                    
+                }
+
+
+
+
+            }
+
+        }
+
+    }
+
+}
