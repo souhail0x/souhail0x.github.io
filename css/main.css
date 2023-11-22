@@ -93,7 +93,7 @@
   }
   .home-page-container .school-cards-slider .school-sugg {
     height: 100%;
-    width: 230px;
+    max-width: 230px;
     margin-right: 20px;
     background-color: red;
     border-radius: 10px;
@@ -216,4 +216,57 @@
   width: 100vw;
   overflow: visible;
   height: 100%;
+}
+
+.categories-container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  gap: 4%;
+}
+.categories-container .categorie {
+  position: relative;
+  height: 220px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.categories-container .categorie img {
+  position: absolute;
+  height: 100%;
+  border-radius: inherit;
+  top: 5%;
+  width: 100%;
+}
+.categories-container .categorie .layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EF9C14;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.9;
+  border-radius: inherit;
+  margin-top: 10px;
+}
+.categories-container .categorie .layer span {
+  text-align: center;
+  width: 70%;
+  font-weight: 600;
+  font-size: 17px;
+  color: #FDFAF5;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 3px rgba(253, 250, 245, 0.6);
+}
+
+.hook {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hook a {
+  color: #EF9C14;
+  font-size: 13px;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
