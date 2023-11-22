@@ -1,4 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&family=Kanit&family=Playfair+Display:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.search-container {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  height: 40px;
+}
+.search-container input {
+  width: 84%;
+  flex: 1;
+  height: 100%;
+  border-radius: 5px;
+  padding-left: 20px;
+  outline: none;
+  border: #EF9C14 solid 1px;
+  background-color: #FDFAF5;
+}
+.search-container button {
+  width: 45px;
+  height: 100%;
+  background-color: #EF9C14;
+  outline: none;
+  border: #EF9C14 solid 1px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (max-width: 900px) {
   .desktop-message {
     display: none;
@@ -56,33 +84,6 @@
   }
   .home-page-container .header .header-right svg {
     fill: #EF9C14;
-  }
-  .home-page-container .search-container {
-    width: 100%;
-    display: flex;
-    gap: 5px;
-    height: 40px;
-  }
-  .home-page-container .search-container input {
-    width: 84%;
-    flex: 1;
-    height: 100%;
-    border-radius: 5px;
-    padding-left: 20px;
-    outline: none;
-    border: #EF9C14 solid 1px;
-    background-color: #FDFAF5;
-  }
-  .home-page-container .search-container button {
-    width: 45px;
-    height: 100%;
-    background-color: #EF9C14;
-    outline: none;
-    border: #EF9C14 solid 1px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .home-page-container .hook {
     margin-top: 10px;
@@ -356,4 +357,13 @@
   font-size: 14px;
   text-decoration: none;
   color: #EF9C14;
+}
+
+.search-page-container {
+  width: 93%;
+  height: auto;
+  margin: auto;
+  padding-top: 10px;
+  font-family: poppins;
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
