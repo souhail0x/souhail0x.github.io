@@ -11,11 +11,6 @@
     font-family: poppins;
     overflow: hidden;
   }
-  .home-page-container .hi-user {
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-weight: 500;
-  }
   .home-page-container .first-title {
     margin-top: 5px;
     font-size: 20px;
@@ -31,21 +26,36 @@
     justify-content: space-between;
     margin-bottom: 20px;
   }
-  .home-page-container .header .logo {
-    font-size: 30px;
-    font-weight: 600;
+  .home-page-container .header .header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
-  .home-page-container .header .profile-image {
-    height: 40px;
-    width: 40px;
-    border: black solid 1px;
+  .home-page-container .header .header-left .profile-image {
+    height: 50px;
+    width: 50px;
+    border: #EF9C14 solid 2px;
     border-radius: 50%;
     padding: 2px;
   }
-  .home-page-container .header .profile-image img {
+  .home-page-container .header .header-left .profile-image img {
     height: 100%;
     width: 100%;
     transform: scale(1.1);
+  }
+  .home-page-container .header .header-left .welcome {
+    font-size: 13px;
+  }
+  .home-page-container .header .header-left .username {
+    font-weight: 500;
+  }
+  .home-page-container .header .header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .home-page-container .header .header-right svg {
+    fill: #EF9C14;
   }
   .home-page-container .search-container {
     width: 100%;
@@ -55,6 +65,7 @@
   }
   .home-page-container .search-container input {
     width: 84%;
+    flex: 1;
     height: 100%;
     border-radius: 5px;
     padding-left: 20px;
@@ -93,7 +104,8 @@
   }
   .home-page-container .school-cards-slider .school-sugg {
     height: 100%;
-    max-width: 230px;
+    max-width: 270px;
+    min-width: 230px;
     margin-right: 20px;
     background-color: red;
     border-radius: 10px;
@@ -269,4 +281,79 @@
   color: #EF9C14;
   font-size: 13px;
   text-decoration: none;
+}
+
+.horizontal-school-card-container {
+  width: 100%;
+  height: auto;
+  gap: 10px;
+}
+.horizontal-school-card-container .horizontal-school-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 5px;
+  height: 151px;
+  border-radius: 5px;
+  border: 1px solid #EF9C14;
+  background: #FDFAF5;
+  padding: 13px 5px;
+  margin-top: 10px;
+}
+.horizontal-school-card-container .horizontal-school-card .image {
+  background-color: #000;
+  width: 94px;
+  height: 125px;
+  border-radius: 5px;
+  background-image: url(assets/aui-building-1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.horizontal-school-card-container .horizontal-school-card .image img {
+  height: 100%;
+  width: 170%;
+}
+.horizontal-school-card-container .horizontal-school-card .body-card {
+  /* background: #000; */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.horizontal-school-card-container .horizontal-school-card .body-card .text span {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.horizontal-school-card-container .horizontal-school-card .body-card .text p {
+  font-size: 13px;
+  width: 100%;
+}
+.horizontal-school-card-container .horizontal-school-card .card-foter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.horizontal-school-card-container .horizontal-school-card .card-foter label:nth-of-type(2) {
+  display: flex;
+  gap: 5px;
+  width: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+.horizontal-school-card-container .horizontal-school-card .card-foter label:nth-of-type(2) a {
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  color: #EF9C14;
 }/*# sourceMappingURL=main.css.map */

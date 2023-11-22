@@ -12,15 +12,7 @@
         
 
 
-        .hi-user {
-            font-size: 18px;
-            margin-bottom: 10px;
-            font-weight: 500;
-            
         
-
-
-        }
 
         .first-title {
             margin-top: 5px;
@@ -46,26 +38,43 @@
             justify-content: space-between;
             margin-bottom: 20px;
 
-            .logo {
-                font-size: 30px;
-                font-weight: 600;
-
+            .header-left{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .profile-image {
+                    height: 50px;
+                    width: 50px;
+                    border: #EF9C14 solid 2px;
+                    border-radius: 50%;
+                    padding: 2px;
+    
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        transform: scale(1.1);
+                    }
+                    
+                }
+                .welcome{
+                    font-size: 13px;
+                }
+                .username{
+                    font-weight: 500;
+                }
 
             }
-
-            .profile-image {
-                height: 40px;
-                width: 40px;
-                border: black solid 1px;
-                border-radius: 50%;
-                padding: 2px;
-
-                img {
-                    height: 100%;
-                    width: 100%;
-                    transform: scale(1.1);
+            .header-right{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                svg{
+                    fill: #EF9C14;
+                   
                 }
             }
+
+            
         }
 
         .search-container {
@@ -77,6 +86,7 @@
 
             input {
                 width: 84%;
+                flex: 1;
                 height: 100%;
                 border-radius: 5px;
                 padding-left: 20px;
@@ -124,7 +134,8 @@
 
             .school-sugg {
                 height: 100%;
-                max-width: 230px;
+                max-width: 270px;
+                min-width: 230px;
                 margin-right: 20px;
                 background-color: red;
                 border-radius: 10px;

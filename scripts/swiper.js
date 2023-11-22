@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
    
-    slidesPerView: 1.5, // Number of slides visible at a time
+    slidesPerView: 1.5 , // Number of slides visible at a time
     spaceBetween: 10, // Space between slides
 
     autoplay: {
