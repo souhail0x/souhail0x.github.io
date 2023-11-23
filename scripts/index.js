@@ -16,3 +16,11 @@ input.addEventListener("input", (e) => {
 
   
 });
+
+
+function showFilter(){
+    document.querySelector('.search-filter-container').style.visibility ='visible'
+}
+function hideFilter(){
+    document.querySelector('.search-filter-container').style.visibility ='hidden'
+}

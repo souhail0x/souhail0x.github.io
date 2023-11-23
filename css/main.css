@@ -366,4 +366,68 @@
   padding-top: 10px;
   font-family: poppins;
   overflow: hidden;
+}
+
+.search-filter-container {
+  display: flex;
+  width: 95%;
+  height: 40vh;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 40px;
+  padding-left: 7%;
+  visibility: hidden;
+  left: 2.5%;
+  right: 2.5%;
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  z-index: 2;
+  border: #EF9C14 1px solid;
+}
+.search-filter-container div {
+  display: flex;
+  width: 30%;
+  height: 60%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.search-filter-container .filter-select-container {
+  width: 55%;
+}
+.search-filter-container label {
+  font-size: 14px;
+}
+.search-filter-container select {
+  outline: none;
+  width: 150px;
+  border: none;
+  border-bottom: #EF9C14 solid 1px;
+  padding-bottom: 4px;
+}
+.search-filter-container .filter-apply-cancel {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+  width: 45%;
+  height: 20%;
+  bottom: 0;
+  right: 0;
+  gap: 10px;
+}
+.search-filter-container .filter-apply-cancel button {
+  height: 60%;
+  padding-right: 7px;
+  padding-left: 7px;
+  border: #EF9C14 1px solid;
+  background-color: #EF9C14;
+  color: white;
+  border-radius: 2px;
+}
+.search-filter-container .filter-apply-cancel .cancel {
+  border: #EF9C14 1px solid;
+  background-color: white;
+  color: #EF9C14;
 }/*# sourceMappingURL=main.css.map */
