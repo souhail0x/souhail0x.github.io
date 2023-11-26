@@ -24,3 +24,7 @@ function showFilter(){
 function hideFilter(){
     document.querySelector('.search-filter-container').style.visibility ='hidden'
 }
+function toProfile(){
+    window.location.href = 'pages/profile.html'
+
+}
